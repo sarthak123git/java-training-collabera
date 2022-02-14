@@ -22,6 +22,7 @@ public class MapDemo {
 		 Answer answer= new Answer();
 		 answer.setAnswerId(11);
 		 answer.setAnswer("java is programming langauge");
+		 answer.setQuestion(q1);
 		 
 		 q1.setAnswer(answer);
 		 
@@ -35,6 +36,7 @@ public class MapDemo {
 		 Answer answer1= new Answer();
 		 answer1.setAnswerId(22);
 		 answer1.setAnswer("collection is framework");
+		 answer1.setQuestion(q2);
 		 
 		 q2.setAnswer(answer1);
 		 

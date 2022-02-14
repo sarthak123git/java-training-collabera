@@ -2,6 +2,7 @@ package hibernate.hibernateMap;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 @Entity
 public class Question {
@@ -11,6 +12,7 @@ public class Question {
 	private String question;
 	
 	@OneToOne
+	@JoinColumn(name="a_id")
 	private Answer answer;
 	
 	public int getQuestnTd() {

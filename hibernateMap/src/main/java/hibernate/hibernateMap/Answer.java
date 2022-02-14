@@ -2,6 +2,8 @@ package hibernate.hibernateMap;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Answer {
@@ -9,6 +11,15 @@ public class Answer {
 	@Id
 	private int answerId;
 	private String answer;
+	
+	@OneToOne
+	private Question question;
+	public Question getQuestion() {
+		return question;
+	}
+	public void setQuestion(Question question) {
+		this.question = question;
+	}
 	public int getAnswerId() {
 		return answerId;
 	}
