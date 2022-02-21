@@ -1,7 +1,5 @@
 package entity;
 
-	
-	 
 	import javax.persistence.Entity;
 	import javax.persistence.GeneratedValue;
 	import javax.persistence.GenerationType;
@@ -9,8 +7,6 @@ package entity;
 	 
 	// Annotations
 	@Entity
-	
-	 
 	// Class
 	public class Department {
 	 

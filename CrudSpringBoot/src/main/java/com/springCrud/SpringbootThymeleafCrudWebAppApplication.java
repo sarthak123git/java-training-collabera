@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication
-@EntityScan(basePackages = {"Model, crudController"})
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class SpringbootThymeleafCrudWebAppApplication {
 
