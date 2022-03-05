@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>IExample of Loop</title>
+</head>
+<body>
+
+
+<h1>Going to traverse element</h1>
+
+<h1  th:text="${names}">  </h1>
+
+<ul>
+    <li th:each = "n : ${names}"> 
+    <span    th:text=" ${n}"></span>
+    
+    </li>
+
+</ul>
+
+</body>
+</html>

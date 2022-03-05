@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>sarthak kondekar thymleaf</h1>
+<h1>Name of employee</h1>
+
+<h1 th:text="${#strings.toUpperCase(name)}"></h1>
+
+<div  th:with = "a=5, b=67, n=${name}">
+<h1>Value of  a is <span  th:text="${a}"></span></h1>
+ 
+ <h1 th:text="'Value of b is ' + ${b}"> </h1>
+
+ <h1 th:text="'Value of b is ' + ${n}"> </h1>
+</div>
+
+ 
+</body>
+</html>
