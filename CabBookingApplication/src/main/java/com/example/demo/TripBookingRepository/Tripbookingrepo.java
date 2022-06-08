@@ -9,3 +9,5 @@ import com.example.demo.TripBookingEntity.Tripbooking;
 public interface Tripbookingrepo extends JpaRepository<Tripbooking, Integer>{
 
 }
+
+//select * from student  join employee on student.std_id = employee.emp_id;
